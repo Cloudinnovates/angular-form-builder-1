@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="col-md-10">
+    <div *ngIf="elementData.element == 'input'"
+         class="form-group">
+      <label>{{elementData.label}}</label>
+      <input type="{{elementData?.type}}"
+             value="{{elementData?.value}}"
+             placeholder="{{elementData?.placeholder}}"
+             class="form-control" readonly>
+    </div>
+  </div>
+  <div class="col-md-2 text-center">
+      <span class="working-area__element__delete-button fa fa-1_5x fa-trash"
+            (click)="removeElementMethod()"></span>
+  </div>
+</div>

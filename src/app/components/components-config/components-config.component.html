@@ -1,0 +1,11 @@
+<div class="card cards__config">
+  <div class="card-header">
+    Config
+  </div>
+  <div class="card-body">
+    <div *ngIf="formElements.length > 0"
+         class="form-config">
+      <pre>{{config | json}}</pre>
+    </div>
+  </div>
+</div>

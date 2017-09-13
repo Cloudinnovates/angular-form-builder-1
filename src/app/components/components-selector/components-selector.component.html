@@ -1,0 +1,14 @@
+<div class="card cards__selector">
+  <div class="card-header">
+    Components
+  </div>
+  <div class="card-body">
+    <div *ngFor="let component of components" class="row cards__component-wrapper">
+      <div class="col-md-6">{{capitalize(component)}}</div>
+      <div class="col-md-6">
+        <button class="btn btn-primary pull-right"
+          (click)="addElementMethod(component)">Add</button>
+      </div>
+    </div>
+  </div>
+</div>

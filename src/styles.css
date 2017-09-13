@@ -1,1 +1,59 @@
-/* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~font-awesome/css/font-awesome.css";
+
+.cards {
+  height: 700px;
+}
+
+.cards .card {
+  /*height: 100%;*/
+}
+
+.cards .zone {
+  padding: 0;
+}
+
+.cards .zone .card {
+  padding: 0;
+}
+
+.cards .zone .wrapper-center {
+  /*height: 100%;*/
+}
+
+.cards .working-area {
+  /*height: 65%;*/
+}
+
+.cards .zone .card.cards__config {
+  /*height: 35%;*/
+}
+
+.cards .card-header {
+  color: #13b0dc;
+  font-weight: bold;
+  background-color: #abebff;
+}
+
+.cards .cards__component-wrapper {
+  margin-bottom: 10px;
+}
+
+.working-area__element {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.working-area__element.selected-element{
+  background-color: #d9eaff;
+}
+
+.working-area__element__delete-button {
+  line-height: inherit;
+  cursor: pointer;
+}
+
+.fa-1_5x {
+  font-size: 1.5em;
+}
+

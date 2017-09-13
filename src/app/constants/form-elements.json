@@ -1,0 +1,25 @@
+{
+  "elements": [
+    {
+      "elem_id": 1,
+      "element": "input",
+      "value": "Johnny Boo",
+      "label": "Element 1",
+      "type": "text"
+    },
+    {
+      "elem_id": 2,
+      "element": "input",
+      "placeholder": "type here...",
+      "label": "Element 2",
+      "type": "text"
+    },
+    {
+      "elem_id": 3,
+      "element": "input",
+      "value": "23 bears",
+      "label": "Element 3",
+      "type": "text"
+    }
+  ]
+}

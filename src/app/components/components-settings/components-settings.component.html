@@ -1,0 +1,30 @@
+<div class="card cards__settings">
+  <div class="card-header">
+    Settings
+  </div>
+  <div class="card-body">
+    <div *ngIf="selectedElement" class="selected-element-attributes">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">label</span>
+        <input type="text" class="form-control" placeholder="Label"
+               name="label"
+               value="{{selectedElement?.label}}"
+               (keyup)="onKeyUp($event)">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon2">pl.h.</span>
+        <input type="text" class="form-control" placeholder="Placeholder"
+               name="placeholder"
+               value="{{selectedElement?.placeholder}}"
+               (keyup)="onKeyUp($event)">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon3">value</span>
+        <input type="text" class="form-control" placeholder="Value"
+               name="value"
+               value="{{selectedElement?.value}}"
+               (keyup)="onKeyUp($event)">
+      </div>
+    </div>
+  </div>
+</div>

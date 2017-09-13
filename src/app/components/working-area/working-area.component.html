@@ -1,0 +1,31 @@
+<div class="row cards">
+  <div class="col-md-3 zone">
+    <components-selector
+      (addElement)="addElementToForm($event)"></components-selector>
+  </div>
+  <div class="col-md-6 zone">
+    <div class="wrapper-center">
+      <div class="working-area">
+        <div *ngFor="let element of formElements"
+             class="working-area__element"
+             [ngClass]="{'selected-element': element === selectedElement}"
+             (click)="selectElement(element)">
+          <form-element
+            [elementData]="element"
+            (removeElement)="removeElementFromForm($event)"></form-element>
+        </div>
+      </div>
+      <components-config
+        [formElements]="formElements">
+      </components-config>
+    </div>
+  </div>
+  <div class="col-md-3 zone">
+    <components-settings
+      [selectedElement]="selectedElement"
+      (changeAttr)="changeElementAttr($event)">
+    </components-settings>
+  </div>
+</div>
+
+
